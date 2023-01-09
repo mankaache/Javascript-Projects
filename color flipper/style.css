@@ -70,7 +70,7 @@ main{
     text-transform: capitalize;
     letter-spacing: 0.1em;
     margin-bottom: 20px;
-    color: var(--text-color2);
+    color: #555;
     padding: 7px 10px;
 }
 button {

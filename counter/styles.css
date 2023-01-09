@@ -1,0 +1,76 @@
+/* ====================
+FONTS
+================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter{
+  max-width: 700px;
+  display: grid;
+  place-items: center;
+}
+.counter h1{
+  font-size: 90px;
+  color: #444;
+}
+.counter .value{
+  font-size: 65px;
+  font-weight: 700;
+  color: #444;
+
+}
+
+
+button {
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: rgb(26, 25, 25);
+    border: 2px solid #333;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    background: #333;
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+  

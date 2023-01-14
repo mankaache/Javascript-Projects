@@ -63,3 +63,21 @@ ul li{
 .keyboard__key:active{
     background: rgba(255,255,255,0.12);
 }
+.keyboard__key--wide{
+    width: 12%;
+}
+.keyboard__key--extra--wide{
+    width: 36%;
+    max-width: 500px;
+}
+.keyboard__key--activable::after
+{
+    content: "";
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.4);
+}

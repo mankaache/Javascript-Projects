@@ -1,0 +1,65 @@
+body{
+    background: #f9f4f2;
+}
+header{
+    padding: 5px 20px;
+    border-bottom: 1px dotted #444;
+}
+header h1{
+    color: #286e60;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.mid{
+    width: 700px;
+    display: flex;
+align-items: center;
+justify-content: space-around;
+}
+ul li{
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+
+.keyboard{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px ;
+    padding: 5px 0;
+    background: #004134;
+    box-shadow:  0 0 50px rgba(0,0,0,0.5);
+    user-select: none;
+    transition:  bottom 0.4s;
+    text-align: center;
+}
+.keyboard--hidden{
+    bottom: -100%;
+}
+.keyboard__key{
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.keyboard__key:active{
+    background: rgba(255,255,255,0.12);
+}

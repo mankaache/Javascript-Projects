@@ -14,10 +14,12 @@ function alarm(person, delay){
     })
 }
 
-  button.addEventListener('click', ()=>{
-    alarm(namer.value, delay.value)
-    .then(message=> output.textContent = message)
-    .catch(error=>{
-        output.textContent = `couldnt set alarm ${error}`
-    })
+button.addEventListener('click', async () => {
+    try {
+      const message = await alarm(namer.value, delay.value);
+      output.textContent = message;
+    }
+    catch (error) {
+      output.textContent = `Couldn't set alarm: ${error}`;
+    }
   });

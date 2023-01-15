@@ -7,7 +7,7 @@ header{
     border-bottom: 1px dotted #444;
 }
 header h1{
-    color: #286e60;
+    color: #0c0999;
     font-size: 40px;
     text-transform: capitalize;
     font-weight: bold;
@@ -30,8 +30,8 @@ ul li{
     width: 100%;
     /* max-width: 900px; */
     padding: 5px 0;
-    background: #004134;
-    box-shadow:  0 0 50px rgba(0,0,0,0.5);
+    background: #2a27b8;
+    box-shadow:  0 0 50px rgba(0,0,0,0.45);
     user-select: none;
     transition:  bottom 0.4s;
     text-align: center;
@@ -81,7 +81,7 @@ ul li{
     background: rgba(0,0,0,0.4);
 }
 .keyboard__key--active::after{
-    background: #08ff00;
+    background: #c4c114;
 }
 .keyboard__key--dark{
     background: rgba(0,0,0,0.25);

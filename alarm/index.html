@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer> </script>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #set-alarm{
+            padding: 7px 10px;
+            background: transparent;
+            border: 1px solid #458393;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+        #output{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #458393;
+        }
+        input{
+            margin: 10px;
+            margin-bottom: 20px;
+            padding: 6px 10px;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <label>Name:<input type="text" id="name"> </label>
+    <label>Delay:<input type="text" id="delay"> </label>
+    <button id="set-alarm">Set alarm</button>
+    <div id="output"></div>
+</body>
+</html>

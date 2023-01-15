@@ -1,0 +1,23 @@
+.meme-generator{
+    margin: 20px auto;
+    width: 700px;
+    font-family: sans-serif;
+}
+
+.meme-generator label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: blueviolet;
+    font-size: 20px;
+}
+.meme-generator input{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid blue;
+}
+#meme{
+    width: 100%;
+}
